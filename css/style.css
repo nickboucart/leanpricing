@@ -2,12 +2,23 @@
  * Globals
  */
 
+@font-face {
+    font-family: 'Corbert Condensed';
+    font-style: normal;
+    font-weight: normal;
+    src: url('corbertcondensed.otf') format("opentype");
+}
+@font-face {
+    font-family: 'Corbert Condensed';
+    font-style: normal;
+    font-weight: bold;
+    src: url('corbertcondenseddemibold.otf') format("opentype");
+}
 /* Links */
 
 a,
-a:focus,
 a:hover {
-    color: #fff;
+    text-decoration: underline;
 }
 /* Custom default button */
 
@@ -33,6 +44,15 @@ body {
     color: #333;
     text-align: center;
     text-shadow: none;
+}
+body {
+    background: url(../images/bg.jpg) no-repeat top;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'Corbert Condensed', sans-serif;
+    font-weight: 400;
 }
 /* Extra markup and styles for table-esque vertical and horizontal centering */
 
@@ -113,6 +133,11 @@ body {
     padding: 10px 20px;
     font-weight: bold;
 }
+.cover-heading {
+    font-family: 'Corbert Condensed', sans-serif;
+    font-weight: bold;
+    font-size: 500%;
+}
 /*
  * Footer
  */
@@ -121,6 +146,18 @@ body {
     color: #999;
     /* IE8 proofing */
     color: rgba(255, 255, 255, .5);
+}
+.marketing {
+    text-align: left
+}
+.marketing li {
+    line-height: 24px
+}
+.book {
+    margin-bottom: 30px;
+}
+.red {
+    color: rgba(191, 15, 63, 1);
 }
 /*
  * Affix and center
@@ -154,14 +191,4 @@ body {
     .cover-container {
         width: 700px;
     }
-}
-p.lead span: {
-    color: red;
-}
-.marketing {
-    text-align: left
-}
-.marketing li {
-    list-style: none;
-    line-height: 24px
 }
