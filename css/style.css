@@ -129,6 +129,7 @@ li {
 }
 a.social {
     margin: 5px;
+    text-decoration: none;
 }
 /*
  * Affix and center
